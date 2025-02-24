@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Management System</title>
+    <style>
+        body {
+            background-image: url("assets/panduan 1.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            background-color: #004A91;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logos {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            max-height: 50px;
+            margin-right: 20px;
+        }
+
+        .pln-logo img {
+            max-height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            padding: 10px; /* Add some padding to the links */
+            border-radius: 5px; /* Add some border radius */
+        }
+
+        nav a:hover {
+            color: #555af3;
+            background-color: rgba(255, 255, 255, 0.2); /* Add a background on hover */
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            color: white;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 15px 30px;
+            background-image: linear-gradient(to right, #2b00ff, #004A91);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta:hover {
+            background-image: linear-gradient(to right, #1958e0, #003f7a);
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            color: #004A91;
+        }
+
+        .card a {
+            color: #004A91;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        #form-karyawan {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #form-karyawan h2 {
+            color: #004A91;
+            margin-bottom: 15px;
+        }
+
+        #form-karyawan label {
+            display: block;
+            margin-bottom: 5px;
+            color: #004A91;
+        }
+
+        #form-karyawan input[type="text"],
+        #form-karyawan input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #form-karyawan input[type="submit"] {
+            background-color: #004A91;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #form-karyawan input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logos">
+                <div class="logo">
+                    <img src="assets/Logo_Haleyora_Power.png" alt="Haleyora Power">
+                </div>
+                <div class="pln-logo">
+                    <img src="assets/Logo_PLN.png" alt="PLN">
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="daftar.html">Daftar</a></li> 
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="sop.html">SOP</a></li>
+                    <li><a href="panduan.html">Panduan IT</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>                
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero">
+        <h1>Knowledge Management System</h1>
+        <p>KMS adalah sistem yang membantu penyimpanan dan penyebaran informasi penting dalam perusahaan.</p>
+        <a href="#" class="cta">Selamat Datang</a>
+    </main>
+
+    <section class="content">
+        <div class="card" id="sop">
+            <h2>Standar Operasional Prosedur (SOP)</h2>
+            <p>Panduan operasional untuk efisiensi kerja.</p>
+            <a href="sop.html">Lihat SOP</a>
+        </div>
+        <div class="card" id="panduan">
+            <h2>Panduan IT</h2>
+            <p>Dokumentasi dan tutorial IT untuk karyawan.</p>
+            <a href="panduan.html">Lihat Panduan IT</a>
+        </div>
+        <div class="card" id="kontak">
+            <h2>Kontak</h2>
+            <p>Hubungi kami untuk informasi lebih lanjut.</p>
+            <a href="kontak.html">Lihat Kontak</a>
+        </div>
+    </section>
+
+   
